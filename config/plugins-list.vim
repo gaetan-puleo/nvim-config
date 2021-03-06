@@ -5,21 +5,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " documentation key
 Plug 'liuchengxu/vim-which-key'
 
-" Plug 'Luxed/ayu-vim'
 Plug 'ghifarit53/tokyonight-vim'
+Plug 'glepnir/oceanic-material'
 
-" coc nvim plugins as plug
-Plug 'Shougo/defx.nvim'
-Plug 'kristijanhusak/defx-icons'
-Plug 'kristijanhusak/defx-git'
+Plug 'vim-airline/vim-airline'
 
 Plug 'dense-analysis/ale'
-
-" Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'weirongxu/coc-explorer', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
 
 "comments
 Plug 'tpope/vim-commentary'
@@ -42,13 +33,19 @@ Plug 'ekalinin/Dockerfile.vim'
 " git conflicts
 Plug 'rhysd/conflict-marker.vim'
 Plug 'vim-test/vim-test'
+" try later in 2022
+" https://github.com/rcarriga/vim-ultest
+
 Plug 'tpope/vim-fugitive'
 
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
 Plug 'akinsho/nvim-bufferline.lua'
-" Plug 'PsychoLlama/further.vim'
-" Plug 'junegunn/fzf'
-" Plug 'junegunn/fzf.vim'
+" make gf works with nodejs and webpack
+Plug 'PsychoLlama/further.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+Plug 'mhinz/vim-startify'
 
 call plug#end()
 
@@ -59,10 +56,8 @@ set termguicolors     " enable true colors support
 " let ayucolor="dark"   " for dark version of theme
 let g:tokyonight_style = 'night' " available: night, storm
 let g:tokyonight_enable_italic = 1
-colorscheme tokyonight
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
-lua << EOF
-    require'bufferline'.setup{
-    separator_style = "thin"
-}
-EOF
+let g:airline_theme='transparent'
+colorscheme oceanic_material
+
