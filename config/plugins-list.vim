@@ -36,6 +36,9 @@ Plug 'vim-test/vim-test'
 " try later in 2022
 " https://github.com/rcarriga/vim-ultest
 
+" Track the engine.
+Plug 'SirVer/ultisnips'
+
 Plug 'tpope/vim-fugitive'
 
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
