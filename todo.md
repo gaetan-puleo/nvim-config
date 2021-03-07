@@ -16,3 +16,4 @@
 - [] tags finder
 - [] easy navigations
 - [] easy test runner
+- [] customize startify

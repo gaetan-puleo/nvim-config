@@ -2,7 +2,7 @@ inoremap <expr> <TAB> pumvisible() ? "\<C-y>" : "\<TAB>"
 let g:coc_snippet_next = '<TAB>'
 let g:coc_snippet_prev = '<S-TAB>'
 
-nnoremap <leader>fr :CocSearch 
+nnoremap <leader>fr :CocSearch
 nnoremap <leader>fe :CocCommand explorer<CR>
 
 nnoremap <silent>  gd <Plug>(coc-definition)

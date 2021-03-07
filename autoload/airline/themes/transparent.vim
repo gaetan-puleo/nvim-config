@@ -139,13 +139,13 @@ let g:airline#themes#transparent#palette.insert_modified.airline_error =
 
 let g:airline#themes#transparent#palette.insert_modified.airline_error =
       \ g:airline#themes#transparent#palette.normal.airline_error
- 
+
 let g:airline#themes#transparent#palette.visual.airline_error =
       \ g:airline#themes#transparent#palette.normal.airline_error
 
 let g:airline#themes#transparent#palette.visual_modified.airline_error =
       \ g:airline#themes#transparent#palette.normal.airline_error
- 
+
 let g:airline#themes#transparent#palette.replace.airline_error =
       \ g:airline#themes#transparent#palette.normal.airline_error
 
