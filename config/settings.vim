@@ -6,7 +6,6 @@ set termguicolors
 let g:cursorhold_updatetime = 100
 
 nnoremap <SPACE> <Nop>
-set exrc
 let mapleader = "\<Space>" 
 
 " enable local .vimrc

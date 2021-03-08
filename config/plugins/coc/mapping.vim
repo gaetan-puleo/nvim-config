@@ -42,3 +42,5 @@ endfunction
 " endfunction
 
 " let g:coc_snippet_next = '<tab>'
+let g:coc_snippet_next = '<leader>sj'
+let g:coc_snippet_prev = '<leader>sk'

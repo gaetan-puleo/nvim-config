@@ -40,12 +40,21 @@ let g:which_key_map.w = {
       \ 'c': 'close other windows',
       \ 't': 'open current window in new tab',
       \ '=': 'equalize splits',
+      \ '-': 'create a horizontal split',
+      \ '\': 'create a vertical split',
       \}
 
-" let g:which_key_map.h = 'Navigate to the left'
-" let g:which_key_map.l = 'Navigate to the right'
-" let g:which_key_map.j = 'Navigate to the bottom'
-" let g:which_key_map.k = 'Navigate to the top'
+let g:which_key_map.s = {
+      \ 'name':'+snippets',
+      \ 'j' : 'go to next placeholder',
+      \ 'k' : 'go to previous placeholder',
+      \ 'e' : 'edit snippets',
+      \}
+
+let g:which_key_map.h = 'Navigate to the left'
+let g:which_key_map.l = 'Navigate to the right'
+let g:which_key_map.j = 'Navigate to the bottom'
+let g:which_key_map.k = 'Navigate to the top'
 
 let g:which_key_map.1 = 'Go to 1st buffer tab'
 let g:which_key_map.2 = 'Go to 2nd buffer tab'
@@ -57,26 +66,11 @@ let g:which_key_map.7 = 'Go to 7th buffer tab'
 let g:which_key_map.8 = 'Go to 8th buffer tab'
 let g:which_key_map.9 = 'Go to 9th buffer tab'
 
-let g:which_key_map.1 = 'which_key_ignore'
-let g:which_key_map.2 = 'which_key_ignore'
-let g:which_key_map.3 = 'which_key_ignore'
-let g:which_key_map.4 = 'which_key_ignore'
-let g:which_key_map.5 = 'which_key_ignore'
-let g:which_key_map.6 = 'which_key_ignore'
-let g:which_key_map.7 = 'which_key_ignore'
-let g:which_key_map.8 = 'which_key_ignore'
-let g:which_key_map.9 = 'which_key_ignore'
-
-let g:which_key_map.h = 'which_key_ignore'
-let g:which_key_map.l = 'which_key_ignore'
-let g:which_key_map.j = 'which_key_ignore'
-let g:which_key_map.k = 'which_key_ignore'
-
 let g:which_key_map['/'] = 'Comment current line'
-let g:which_key_map['\'] = 'Create a vertical split'
-let g:which_key_map['-'] = 'Create a horizontal split'
 " let g:which_key_map['/'] = 'which_key_ignore'
 " let g:which_key_map['\'] = 'which_key_ignore'
 " let g:which_key_map['-'] = 'which_key_ignore'
 
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+
+nnoremap <silent> <c> :WhichKey '<c>'<CR>

@@ -20,8 +20,8 @@ nnoremap <leader>wc <c-w>o
 " Open current split in new tab
 nnoremap <leader>wt <c-w>T
 
-nnoremap <leader>\ :vs <CR>
-nnoremap <leader>- :sp <CR>
+nnoremap <leader>w\ :vs <CR>
+nnoremap <leader>w- :sp <CR>
 
 " Make arrowkey do something usefull, resize the viewports accordingly
 nnoremap <Left> :vertical resize +5<CR>
