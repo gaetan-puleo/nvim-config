@@ -10,16 +10,18 @@ nnoremap <silent>  gy <Plug>(coc-type-definition)
 nnoremap <silent>  gi <Plug>(coc-implementation)
 nnoremap <silent>  gr <Plug>(coc-references)
 
+" Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 " nnoremap <silent> <leader>d :call CocAction('doHover')<CR>
 
 
-"show documentation in place
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
+  elseif (coc#rpc#ready())
+    call CocActionAsync('doHover')
   else
-    call CocAction('doHover')
+    execute '!' . &keywordprg . " " . expand('<cword>')
   endif
 endfunction
 
@@ -44,3 +46,7 @@ endfunction
 " let g:coc_snippet_next = '<tab>'
 let g:coc_snippet_next = '<leader>sj'
 let g:coc_snippet_prev = '<leader>sk'
+
+
+" Symbol renaming.
+nmap <leader>rn <Plug>(coc-rename)

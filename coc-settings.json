@@ -1,4 +1,6 @@
 {
+    // coc nvim
+    "codeLens.enable": true,
     // tsserver
     "javascript.suggest.enabled": false,
     "javascript.validate.enable": false,
@@ -116,4 +118,3 @@
     // coc git
     "git.enableGutters": false
   }
-  
