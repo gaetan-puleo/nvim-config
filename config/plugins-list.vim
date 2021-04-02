@@ -6,7 +6,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'liuchengxu/vim-which-key'
 
 Plug 'ghifarit53/tokyonight-vim'
-Plug 'glepnir/oceanic-material'
 
 Plug 'vim-airline/vim-airline'
 
@@ -29,7 +28,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'jxnblk/vim-mdx-js'
 Plug 'ekalinin/Dockerfile.vim'
-
+Plug 'digitaltoad/vim-pug'
 " git conflicts
 Plug 'rhysd/conflict-marker.vim'
 Plug 'vim-test/vim-test'
@@ -62,5 +61,5 @@ let g:tokyonight_enable_italic = 1
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 let g:airline_theme='transparent'
-colorscheme oceanic_material
+colorscheme tokyonight
 
