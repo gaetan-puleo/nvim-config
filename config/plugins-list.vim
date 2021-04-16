@@ -19,7 +19,6 @@ Plug 'troydm/zoomwintab.vim'
 Plug 'djoshea/vim-autoread'
 
 Plug 'antoinemadec/FixCursorHold.nvim'
-Plug 'mhinz/vim-signify'
 
 "solidity
 Plug 'tomlion/vim-solidity'
@@ -49,10 +48,16 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'mhinz/vim-startify'
 
-" Search and replace
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-lua/popup.nvim'
+Plug 'lewis6991/gitsigns.nvim'
+
+" Search and replace
 Plug 'windwp/nvim-spectre'
+
+
+" underline same words
+Plug 'yamatsum/nvim-cursorline'
 
 call plug#end()
 
