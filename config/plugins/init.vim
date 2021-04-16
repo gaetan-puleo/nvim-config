@@ -11,3 +11,4 @@ source $HOME/.config/nvim/config/plugins/vim-fugitive.vim
 source $HOME/.config/nvim/config/plugins/vim-test.vim
 source $HOME/.config/nvim/config/plugins/nvim-bufferline.vim
 source $HOME/.config/nvim/config/plugins/vim-which-key.vim
+source $HOME/.config/nvim/config/plugins/nvim-spectre.vim

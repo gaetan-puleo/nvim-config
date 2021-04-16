@@ -49,6 +49,11 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'mhinz/vim-startify'
 
+" Search and replace
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'windwp/nvim-spectre'
+
 call plug#end()
 
 "...
