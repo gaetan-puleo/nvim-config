@@ -1,19 +1,22 @@
 # NVIM Stable config Roadmap
 
-- [x] comments
-- [x] buffertabs like vscode
-- [] easy window navigations
-- [] easy tab navigation
-- [-] easy buffer navigations
-- [-] easy search file
-- [] easy search and replace
-- [-] file tree
-- [] search line
-- [-] autocomplete
-- [-] linter and fixer for js
-- [] formatter for html and css
-- [] snippets
-- [] tags finder
-- [] easy navigations
-- [] easy test runner
-- [] customize startify
+## Bugs Fix
+
+- [] Comment in visual code is hard to do
+- [] I want multiline comment for visual mode for JSX
+- [] Bufferline and nvimtree bug
+		if I close a buffer on bufferline, nvimtree open new buffer in new split
+
+## Keymaps
+
+- [] base mapping to lua file
+- [] Plugin mapping to lua files
+- [] Choose better keymaps
+- [] which key setting
+
+## Dashboard 
+- [] Choose action to display on start screen
+
+## Theme
+- [] Make sure to have same JSX and TSX colors
+
