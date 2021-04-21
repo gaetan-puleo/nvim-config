@@ -1,68 +1,67 @@
 " enable true color
-set termguicolors
+" set termguicolors
 
 " in millisecond, used for both CursorHold and CursorHoldI,
 " use updatetime instead if not defined
-let g:cursorhold_updatetime = 100
+" let g:cursorhold_updatetime = 100
 
-nnoremap <SPACE> <Nop>
-let mapleader = "\<Space>" 
+" nnoremap <SPACE> <Nop>
+" let mapleader = "\<Space>" 
 
-" enable local .vimrc
-set exrc
-set secure
+" enable local .nvimrc
+" set exrc
+" set secure
 
-" Necessary for lots of cool vim things
-set nocompatible
 
 " One tab equal 2 spaces
-set tabstop=2 shiftwidth=2 expandtab
+" set tabstop=2 shiftwidth=2 expandtab
 
 " no alerts
-set belloff=all
+" set belloff=all
 
 " show linenumber
-set number
+" set number
 
 " allow clipboard
-set clipboard+=unnamedplus
+" set clipboard+=unnamedplus
 
 " choose split location
-set splitbelow
-set splitright
+" set splitbelow
+" set splitright
 
 " Enable cursor line position tracking
-set cursorline
+" set cursorline
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
 
 " set winbl=10
 
 " disable backupfile
-set nobackup
-set noswapfile
-set backupcopy=yes
+" set nobackup
+" set nobackup
+" set noswapfile
+" set backupcopy=yes
 
 " force to always show tablines
 " set showtabline=2
 
 " mouse (r for disable and a for enable )
-set mouse=a
-set guicursor&
+" set mouse=a
+" set guicursor&
 
 " auto save when changing buffer 
-set autowrite
+" set autowrite
 
 " keep history if when changling buffer
-set hidden
+" set hidden
 " By default timeoutlen is 1000 ms
-set timeoutlen=200
+" set timeoutlen=200
 " persistent undo history
-set undodir=~/.cache/.vim/undodir
-set undofile
+" set undodir=~/.cache/.vim/undodir
+" set undofile
 
 " hide mode (already in statusbar)
-set noshowmode
+" set noshowmode
 
 " see invinsble characters
 " :set list
@@ -72,13 +71,13 @@ set noshowmode
 set inccommand=nosplit
 
 "columns number in gutter
-set numberwidth=4
+" set numberwidth=4
 
 " disable netrw
-let loaded_netrwPlugin = 1
+" let loaded_netrwPlugin = 1
 
 " turn hybrid line numbers on
-:set number
+" :set number
 
 " terminal
 augroup neovim_terminal
