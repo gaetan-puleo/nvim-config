@@ -2,15 +2,17 @@ lua require('plugins/theme')
 
 call plug#begin()
 
+"Ale
+Plug 'dense-analysis/ale'
+
 "Lualine
 Plug 'hoob3rt/lualine.nvim'
 " documentation key
 Plug 'liuchengxu/vim-which-key'
 Plug 'AckslD/nvim-whichkey-setup.lua'
-
 Plug 'folke/tokyonight.nvim'
 
-" Plug 'tpope/vim-commentary' 
+Plug 'tpope/vim-commentary' 
 " zoom mode
 " Plug 'troydm/zoomwintab.vim'
 Plug 'djoshea/vim-autoread'
@@ -51,7 +53,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'kabouzeid/nvim-lspinstall'
 
 " comments
-Plug 'b3nj5m1n/kommentary'
+" Plug 'b3nj5m1n/kommentary'
 
 " LSP Completion
 Plug 'hrsh7th/nvim-compe'
