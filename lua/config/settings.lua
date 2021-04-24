@@ -29,15 +29,45 @@ vim.wo.signcolumn = "yes" -- Always show the signcolumn, otherwise it would shif
 vim.o.autowrite = true -- Autosave when changing buffer
 vim.o.mouse = "a" -- Enable your mouse
 
-vim.o.hidden = true -- Required to keep mult:iple buffers open
-vim.o.timeoutlen = 100 -- By default timeoutlen is 1000 ms
+vim.o.hidden = true -- Required to keep multiple buffers open
+vim.o.timeoutlen = 300 -- By default timeoutlen is 1000 ms
 
 -- Persistent undo history
 -- vim.o.undodir = '$HOME/.cache/.vim/undodir'
 -- vim.o.undofile = true
+--Save undo history
+vim.cmd[[set undofile]]
 
 vim.o.showmode = false -- We don't need to see things like -- INSERT -- anymore
 
 vim.wo.numberwidth = 4 -- columns number in gutter
 vim.o.cmdheight = 2 -- cmd line height
+
+--Enable break indent
+vim.o.breakindent = true
+
+--Set highlight on search
+vim.o.hlsearch = false
+vim.o.incsearch = true
+
+--Case insensitive searching UNLESS /C or capital in search
+vim.o.ignorecase = true
+vim.o.smartcase = true
+
+--Incremental live completion
+vim.o.inccommand = "nosplit"
+
+--Decrease update time
+vim.o.updatetime = 250
+vim.wo.signcolumn="yes"
+
+-- Change preview window location
+vim.g.splitbelow = true
+
+
+
+
+
+
+
 

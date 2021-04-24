@@ -1,3 +1,3 @@
 vim.api.nvim_command([[
-	autocmd TermOpen * startinsert
+autocmd TermOpen * startinsert
 ]])

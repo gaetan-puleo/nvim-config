@@ -1,1 +1,6 @@
-vim.g['indent_blankline_filetype_exclude'] = {'NvimTree', 'startify', 'spectre_panel', 'help', 'dashboard'}
+--Map blankline
+-- vim.g.indent_blankline_char = "┊"
+vim.g.indent_blankline_buftype_exclude = { 'terminal', 'nofile'}
+vim.g.indent_blankline_char_highlight = 'LineNr'
+
+vim.g.indent_blankline_filetype_exclude = {'NvimTree', 'startify', 'spectre_panel', 'help', 'dashboard', 'packer'}
