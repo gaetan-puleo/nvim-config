@@ -14,3 +14,5 @@ map('n', '<leader>j', '<C-w>j', {noremap = true, silent = true})
 map('n', '<leader>k', '<C-w>k', {noremap = true, silent = true})
 map('n', '<leader>l', '<C-w>l', {noremap = true, silent = true})
 
+map('v', 'i', 'I', {noremap = true, silent = true})
+

@@ -21,6 +21,8 @@ require('packer').startup(function()
   use 'dense-analysis/ale' 					 -- used for fixing errors
   use 'djoshea/vim-autoread'         -- vim autoread file after external write
   use 'tpope/vim-commentary'         -- "gc" to comment visual regions/lines
+	use 'liuchengxu/vim-which-key'     -- never forget keybinding
+	use 'AckslD/nvim-whichkey-setup.lua' -- which key for lua
 --   -- UI to select things (files, grep results, open buffers...)
   use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} }
   use 'folke/tokyonight.nvim'         -- tokyonight power
@@ -53,6 +55,7 @@ require('plugins/gitsigns')
 require('plugins/indent-blankline')
 require('plugins/lualine')
 require('plugins/nvim-tree')
+require('plugins/nvim-whichkey-setup')
 -- require('plugins/symbols-outline')
 require('plugins/telescope')
 require('plugins/treesitter')
