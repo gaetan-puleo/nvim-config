@@ -8,7 +8,8 @@ require("whichkey_setup").config{
     -- },
     default_mode = 'n',
 }
-vim.g.which_key_use_floating_win = 0
+vim.g.which_key_use_floating_win = 0 -- don't use floatting windows
+vim.g.which_key_fallback_to_native_key = 1 -- use native fallback
 local leaderKeymap = {
 	['/'] = 'Comment',
     ['1'] = 'which_key_ignore',
@@ -70,10 +71,12 @@ local gKeymap = {
 	D = 'Go to declaration',
 	d = 'Go to definition',
 	r = 'Go to references',
+	f = 'Go to file',
 	R = 'Rename Reference',
 	c = 'which_key_ignore', -- ignore vim commentary
 	cc = 'which_key_ignore', -- ignore vim commentary
 	cu = 'which_key_ignore', -- ignore vim commentary
+	x = 'which_key_ignore', -- ignore netrw
 	h = 'LSP actions',
 }
 
