@@ -4,8 +4,10 @@
 
 - [] Comment in visual code is hard to do
 - [] I want multiline comment for visual mode for JSX
-- [] Bufferline and nvimtree bug
+- [] nvimtree bug
 		if I close a buffer on bufferline, nvimtree open new buffer in new split
+		[issue](https://github.com/kyazdani42/nvim-tree.lua/issues/341)
+
 
 ## Keymaps
 
@@ -17,6 +19,5 @@
 ## Dashboard 
 - [] Choose action to display on start screen
 
-## Theme
-- [] Make sure to have same JSX and TSX colors
+## Theme - [] Make sure to have same JSX and TSX colors
 
