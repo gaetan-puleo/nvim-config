@@ -44,6 +44,7 @@ require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons' -- display icons
 	-- LSP
 	use 'neovim/nvim-lspconfig' -- native lsp config
+	use 'glepnir/lspsaga.nvim' -- Better lsp integration
 	use 'simrat39/symbols-outline.nvim' -- display symbols
   use 'onsails/lspkind-nvim'         -- add vscode like icons in completion menu
 end)
@@ -57,11 +58,12 @@ require('plugins/dashboard')
 require('plugins/gitsigns')
 require('plugins/indent-blankline')
 require('plugins/lsp-config')
+require('plugins/lspsaga')
 require('plugins/lualine')
 require('plugins/nvim-colorizer')
 require('plugins/nvim-tree')
 require('plugins/nvim-whichkey-setup')
--- require('plugins/symbols-outline')
+require('plugins/symbols-outline')
 require('plugins/telescope')
 require('plugins/treesitter')
 --Set colorscheme (order is important here)

@@ -51,4 +51,4 @@ map('n','gh', '<cmd>lua require(\'lspsaga.provider\').lsp_finder()<CR>', { silen
 map('n','ca', '<cmd>lua require(\'lspsaga.codeaction\').code_action()<CR>', { silent = true})
 map('v','ca', '<cmd>lua require(\'lspsaga.codeaction\').range_code_action()<CR>', { silent = true})
 map('n','K', '<cmd>lua require(\'lspsaga.hover\').render_hover_doc()<CR>', { silent = true})
-map('n','rr', '<cmd>lua require(\'lspsaga.rename\').rename()<CR>', { silent = true})
+map('n','gR', '<cmd>lua require(\'lspsaga.rename\').rename()<CR>', { silent = true})

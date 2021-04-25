@@ -63,12 +63,21 @@ local leaderKeymap = {
 -- 	['/'] = 'Comment'
 -- }
 
--- local gKeymap = {
--- 	name = "+goto",
--- 	h = { "<cmd>lua require'lspsaga.provider'.lsp_finder()<CR>", "References" },
--- }
+local gKeymap = {
+	name = "+goto",
+	t = 'Go to type definition',
+	i = 'Go to implementation',
+	D = 'Go to declaration',
+	d = 'Go to definition',
+	r = 'Go to references',
+	R = 'Rename Reference',
+	c = 'which_key_ignore', -- ignore vim commentary
+	cc = 'which_key_ignore', -- ignore vim commentary
+	cu = 'which_key_ignore', -- ignore vim commentary
+	h = 'LSP actions',
+}
 
--- wk.register_keymap('g', gKeymap)
+wk.register_keymap('g', gKeymap)
 wk.register_keymap(' ', leaderKeymap)
 -- wk.register_keymap(' ', leaderVisualKeymap, {mode = 'v'})
 
