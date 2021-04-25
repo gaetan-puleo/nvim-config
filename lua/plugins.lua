@@ -37,12 +37,15 @@ require('packer').startup(function()
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'JoosepAlviste/nvim-ts-context-commentstring' -- Better comments for jsx, tsx, vue, html
   use 'windwp/nvim-ts-autotag'       -- auto rename Tag
-  -- use 'onsails/lspkind-nvim'         -- add vscode like icons in completion menu
+  -- use 'romgrk/nvim-treesitter-context'  -- show code context
   use 'kyazdani42/nvim-tree.lua'     -- tree file
   use 'norcalli/nvim-colorizer.lua'  -- display color in your buffer
   use 'akinsho/nvim-bufferline.lua'  -- display buffers name as tab
   use 'kyazdani42/nvim-web-devicons' -- display icons
+	-- LSP
+	use 'neovim/nvim-lspconfig' -- native lsp config
 	use 'simrat39/symbols-outline.nvim' -- display symbols
+  use 'onsails/lspkind-nvim'         -- add vscode like icons in completion menu
 end)
 
 
@@ -53,7 +56,9 @@ require('plugins/compe')
 require('plugins/dashboard')
 require('plugins/gitsigns')
 require('plugins/indent-blankline')
+require('plugins/lsp-config')
 require('plugins/lualine')
+require('plugins/nvim-colorizer')
 require('plugins/nvim-tree')
 require('plugins/nvim-whichkey-setup')
 -- require('plugins/symbols-outline')

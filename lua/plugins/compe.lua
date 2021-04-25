@@ -17,11 +17,11 @@ require'compe'.setup {
   source = {
     path = true;
     buffer = false;
-    calc = true;
+    calc = false;
     vsnip = false;
     nvim_lsp = true;
     nvim_lua = true;
-    spell = true;
+    spell = false;
     tags = false;
     snippets_nvim = true;
     treesitter = true;
