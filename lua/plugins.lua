@@ -18,6 +18,7 @@ local use = require('packer').use
 require('packer').startup(function()
   use 'wbthomason/packer.nvim'       -- Package manager
   use 'antoinemadec/FixCursorHold.nvim' -- fix cursor for nvim
+  use 'dense-analysis/ale' 					 -- used for fixing errors
   use 'djoshea/vim-autoread'         -- vim autoread file after external write
   use 'tpope/vim-commentary'         -- "gc" to comment visual regions/lines
 --   -- UI to select things (files, grep results, open buffers...)
@@ -43,6 +44,7 @@ require('packer').startup(function()
 end)
 
 
+require('plugins/ale')
 require('plugins/bufferline')
 require('plugins/commentary')
 require('plugins/compe')
