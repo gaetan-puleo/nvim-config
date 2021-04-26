@@ -18,10 +18,9 @@ local use = require('packer').use
 require('packer').startup(function()
   use 'wbthomason/packer.nvim'       -- Package manager
   use 'antoinemadec/FixCursorHold.nvim' -- fix cursor for nvim
-  -- use 'dense-analysis/ale' 					 -- used for fixing errors
   use 'sbdchd/neoformat'             -- code formatter
   use 'djoshea/vim-autoread'         -- vim autoread file after external write
-  use 'tpope/vim-commentary'         -- "gc" to comment visual regions/lines
+	use 'b3nj5m1n/kommentary'
   use 'liuchengxu/vim-which-key'     -- never forget keybinding
   use 'AckslD/nvim-whichkey-setup.lua' -- which key for lua
 --   -- UI to select things (files, grep results, open buffers...)
@@ -39,7 +38,6 @@ require('packer').startup(function()
   use 'JoosepAlviste/nvim-ts-context-commentstring' -- Better comments for jsx, tsx, vue, html
   use 'windwp/nvim-ts-autotag'       -- auto rename Tag
   use 'metakirby5/codi.vim'       	 -- code runner
-  -- use 'romgrk/nvim-treesitter-context'  -- show code context
   use 'kyazdani42/nvim-tree.lua'     -- tree file
   use 'norcalli/nvim-colorizer.lua'  -- display color in your buffer
   use 'akinsho/nvim-bufferline.lua'  -- display buffers name as tab
@@ -55,11 +53,11 @@ end)
 -- require('plugins/ale')
 require('plugins/bufferline')
 require('plugins/codi')
-require('plugins/commentary')
 require('plugins/compe')
 require('plugins/dashboard')
 require('plugins/gitsigns')
 require('plugins/indent-blankline')
+require('plugins/kommentary')
 require('plugins/lsp-config')
 require('plugins/lspsaga')
 require('plugins/lualine')
