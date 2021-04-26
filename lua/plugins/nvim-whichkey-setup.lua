@@ -36,7 +36,6 @@ local leaderKeymap = {
 		s = 'Find current file in tree view',
 		o = 'Recently Used',
 		p = 'Find file',
-		l = 'Find in current file',
 		b = 'Files currently open',
     },
 	g = {
@@ -52,7 +51,10 @@ local leaderKeymap = {
 		d = 'Disable codi',
 	},
 	s = {
-		name = '+search'
+		name = '+search',
+		p = 'Search string',
+		r = 'Search and replace',
+		l = 'Find in current file',
 	},
 	hp = 'which_key_ignore', -- wtf
 	h = 'which_key_ignore',

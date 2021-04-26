@@ -18,6 +18,7 @@ local use = require('packer').use
 require('packer').startup(function()
   use 'wbthomason/packer.nvim'       -- Package manager
   use 'antoinemadec/FixCursorHold.nvim' -- fix cursor for nvim
+	use 'windwp/nvim-spectre' 				 -- Search and Replace
   use 'sbdchd/neoformat'             -- code formatter
   use 'djoshea/vim-autoread'         -- vim autoread file after external write
 	use 'b3nj5m1n/kommentary' 				 -- add comments
@@ -65,6 +66,7 @@ require('plugins/lspsaga')
 require('plugins/lualine')
 require('plugins/neoformatter')
 require('plugins/nvim-colorizer')
+require('plugins/nvim-spectre')
 require('plugins/nvim-tree')
 require('plugins/nvim-whichkey-setup')
 require('plugins/symbols-outline')
