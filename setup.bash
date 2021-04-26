@@ -4,4 +4,8 @@ npm -g install tsun \
 	vscode-css-languageserver-bin \
 	typescript \
 	typescript-language-server \
-	vscode-json-languageserver
+	vscode-json-languageserver \
+	diagnostic-languageserver
+
+# install ESLint
+npm - g install eslint_d

@@ -59,14 +59,14 @@ local function make_config()
 end
 
 local function setup_servers()
-  local servers = {'tsserver','cssls', 'html', 'jsonls'}
+  local servers = {'tsserver','cssls', 'html', 'jsonls', 'diagnosticls'}
   for _, server in pairs(servers) do
     local config = make_config()
 
-    -- -- language specific config
-    -- if server == "diagnosticls" then
-    --   config = vim.tbl_extend("force", config, require'plugins/diagnosticls')
-    -- end
+    -- language specific config
+    if server == "diagnosticls" then
+      config = vim.tbl_extend("force", config, require'plugins/diagnosticls')
+    end
     require'lspconfig'[server].setup(config)
   end
 end

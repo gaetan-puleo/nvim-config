@@ -9,7 +9,7 @@ return {
       linters = {
         eslint = {
           -- command = './node_modules/.bin/eslint',
-          command = 'eslint_d',
+          command = 'eslint_d', -- faster than eslint
           rootPatterns = { '.git' },
           debounce = 100,
           args = { '--stdin', '--stdin-filename', '%filepath', '--format', 'json' },
