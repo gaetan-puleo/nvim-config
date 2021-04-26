@@ -1,5 +1,8 @@
 local map = vim.api.nvim_set_keymap
 
+vim.g.bufferline = {
+	animation = false
+}
 
 map('n', '<leader>1', ':BufferGoto 1<CR>', {})
 map('n', '<leader>2', ':BufferGoto 2<CR>', {})
@@ -29,3 +32,5 @@ nnoremap <silent> <C-s>    :BufferPick<CR>
 " Sort automatically by...
 nnoremap <silent> <Space>bd :BufferOrderByDirectory<CR>
 nnoremap <silent> <Space>bl :BufferOrderByLanguage<CR> ]]
+
+

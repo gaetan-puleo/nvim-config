@@ -40,8 +40,8 @@ require('packer').startup(function()
   use 'metakirby5/codi.vim'       	 -- code runner
   use 'kyazdani42/nvim-tree.lua'     -- tree file
   use 'norcalli/nvim-colorizer.lua'  -- display color in your buffer
-	use 'romgrk/barbar.nvim' 					 -- display buffers name as tab
-  -- use 'akinsho/nvim-bufferline.lua'  -- display buffers name as tab
+	-- use 'romgrk/barbar.nvim' 					 -- display buffers name as tab
+  use 'akinsho/nvim-bufferline.lua'  -- display buffers name as tab
   use 'kyazdani42/nvim-web-devicons' -- display icons
   -- LSP
   use 'neovim/nvim-lspconfig' -- native lsp config
@@ -52,8 +52,8 @@ end)
 
 
 -- require('plugins/ale')
--- require('plugins/bufferline')
-require('plugins/barbar')
+require('plugins/bufferline')
+-- require('plugins/barbar')
 require('plugins/codi')
 require('plugins/compe')
 require('plugins/dashboard')
