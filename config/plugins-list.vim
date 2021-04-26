@@ -8,7 +8,7 @@ Plug 'dense-analysis/ale'
 "Lualine
 " Plug 'hoob3rt/lualine.nvim'
 " documentation key
-Plug 'liuchengxu/vim-which-key'
+" Plug 'liuchengxu/vim-which-key'
 " Plug 'AckslD/nvim-whichkey-setup.lua'
 " Plug 'folke/tokyonight.nvim'
 
@@ -42,7 +42,7 @@ Plug 'windwp/nvim-spectre'
 " Plug 'kyazdani43/nvim-tree.lua'
 
 " LSP
-Plug 'neovim/nvim-lspconfig'
+" Plug 'neovim/nvim-lspconfig'
 Plug 'kabouzeid/nvim-lspinstall'
 
 " LSP Completion
@@ -55,7 +55,7 @@ Plug 'kabouzeid/nvim-lspinstall'
 " Plug 'lukas-reineke/indent-blankline.nvim', { 'branch': 'lua' }
 
 " better lsp
-Plug 'glepnir/lspsaga.nvim'
+" Plug 'glepnir/lspsaga.nvim'
 
 " dashboard
 " Plug 'glepnir/dashboard-nvim'

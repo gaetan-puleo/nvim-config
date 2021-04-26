@@ -31,33 +31,38 @@ local leaderKeymap = {
     -- ['8'] = 'Go to buffer 8',
     -- ['9'] = 'Go to buffer 9',
     f = {
-			name = '+file',
-			e = 'File tree view',
-			s = 'Find current file in tree view',
-			o = 'Recently Used',
-			p = 'Find file',
-			l = 'Find in current file',
-			b = 'Files currently open',
+		name = '+file',
+		e = 'File tree view',
+		s = 'Find current file in tree view',
+		o = 'Recently Used',
+		p = 'Find file',
+		l = 'Find in current file',
+		b = 'Files currently open',
     },
-		g = {
-			name = '+git',
-			b = 'List branches',
-			s = 'Current status',
-			c = 'List commits',
-			p = 'Commits changes',
-		},
-		s = {
-			name = '+search'
-		},
-		hp = 'which_key_ignore', -- wtf
-		h = 'which_key_ignore',
-		l = 'which_key_ignore',
-		j = 'which_key_ignore',
-		k = 'which_key_ignore',
-		-- h = 'Go to the left window',
-		-- l = 'Go to the right window',
-		-- j = 'Go to the bottom window',
-		-- k = 'Go to the top window',
+	g = {
+		name = '+git',
+		b = 'List branches',
+		s = 'Current status',
+		c = 'List commits',
+		p = 'Commits changes',
+	},
+	r = {
+		name = '+run',
+		e = 'Enable codi',
+		d = 'Disable codi',
+	},
+	s = {
+		name = '+search'
+	},
+	hp = 'which_key_ignore', -- wtf
+	h = 'which_key_ignore',
+	l = 'which_key_ignore',
+	j = 'which_key_ignore',
+	k = 'which_key_ignore',
+	-- h = 'Go to the left window',
+	-- l = 'Go to the right window',
+	-- j = 'Go to the bottom window',
+	-- k = 'Go to the top window',
 }
 
 -- local leaderVisualKeymap = {
