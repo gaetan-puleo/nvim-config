@@ -20,7 +20,7 @@ require('packer').startup(function()
   use 'antoinemadec/FixCursorHold.nvim' -- fix cursor for nvim
   use 'sbdchd/neoformat'             -- code formatter
   use 'djoshea/vim-autoread'         -- vim autoread file after external write
-	use 'b3nj5m1n/kommentary'
+	use 'b3nj5m1n/kommentary' 				 -- add comments
   use 'liuchengxu/vim-which-key'     -- never forget keybinding
   use 'AckslD/nvim-whichkey-setup.lua' -- which key for lua
 --   -- UI to select things (files, grep results, open buffers...)
@@ -40,7 +40,8 @@ require('packer').startup(function()
   use 'metakirby5/codi.vim'       	 -- code runner
   use 'kyazdani42/nvim-tree.lua'     -- tree file
   use 'norcalli/nvim-colorizer.lua'  -- display color in your buffer
-  use 'akinsho/nvim-bufferline.lua'  -- display buffers name as tab
+	use 'romgrk/barbar.nvim' 					 -- display buffers name as tab
+  -- use 'akinsho/nvim-bufferline.lua'  -- display buffers name as tab
   use 'kyazdani42/nvim-web-devicons' -- display icons
   -- LSP
   use 'neovim/nvim-lspconfig' -- native lsp config
@@ -51,7 +52,8 @@ end)
 
 
 -- require('plugins/ale')
-require('plugins/bufferline')
+-- require('plugins/bufferline')
+require('plugins/barbar')
 require('plugins/codi')
 require('plugins/compe')
 require('plugins/dashboard')
