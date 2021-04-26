@@ -16,3 +16,9 @@ map('n', '<leader>l', '<C-w>l', {noremap = true, silent = true})
 
 map('v', 'i', 'I', {noremap = true, silent = true})
 
+-- disable f***** q 
+map('n', 'Q', '<NOP>', {noremap = true, silent = true})
+--[[ map('n', 'q:', '<NOP>', {noremap = true, silent = true})
+map('n', 'q/', '<NOP>', {noremap = true, silent = true})
+map('n', 'q?', '<NOP>', {noremap = true, silent = true}) ]]
+
