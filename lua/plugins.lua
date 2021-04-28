@@ -46,6 +46,7 @@ require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons' -- display icons
   -- LSP
   use 'neovim/nvim-lspconfig' -- native lsp config
+	use 'justinmk/vim-sneak' -- motion 
   use 'glepnir/lspsaga.nvim' -- Better lsp integration
   use 'simrat39/symbols-outline.nvim' -- display symbols
   use 'gaetan-puleo/hi-common-groups' -- theme groups
