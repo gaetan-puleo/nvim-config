@@ -47,7 +47,7 @@ vim.o.cmdheight = 2 -- cmd line height
 vim.o.breakindent = true
 
 --Set highlight on search
-vim.o.hlsearch = false
+vim.o.hlsearch = true
 vim.o.incsearch = true
 
 --Case insensitive searching UNLESS /C or capital in search

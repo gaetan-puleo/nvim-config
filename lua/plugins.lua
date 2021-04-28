@@ -48,6 +48,7 @@ require('packer').startup(function()
   use 'neovim/nvim-lspconfig' -- native lsp config
   use 'glepnir/lspsaga.nvim' -- Better lsp integration
   use 'simrat39/symbols-outline.nvim' -- display symbols
+  use 'gaetan-puleo/hi-common-groups' -- theme groups
   use 'onsails/lspkind-nvim'         -- add vscode like icons in completion menu
 end)
 
